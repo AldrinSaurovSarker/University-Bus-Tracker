@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myproject">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bus2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bus2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject">
+        <activity
+            android:name=".HelpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CallBusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BusInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InfoBusSelectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DriverProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DriverAccountSettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BusOnMapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DriverHomepageActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBzJg3G15AGjpEpIKVwia5AZR4KisWHYwo" />
+
+        <activity
+            android:name=".SignupNextActivity"
+            android:exported="true" />
+        <activity android:name=".MapBusSelectActivity" />
+        <activity android:name=".HomepageActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".UserLocationActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

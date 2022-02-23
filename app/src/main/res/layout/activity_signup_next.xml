@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupNextActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="235dp"
+        android:layout_height="215dp"
+        app:srcCompat="@drawable/bus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextContactNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUserName"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Contact No"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Switch
+        android:id="@+id/switchDriverCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContactNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="48dp"
+        android:padding="3dp"
+        android:text="Driver" />
+
+    <EditText
+        android:id="@+id/editTextBusName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchDriverCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Bus Name"
+        android:inputType="textPersonName"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/editTextBusNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bus Number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextBusName"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextBusDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Bus Route"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextBusNo"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextBusDetails"/>
+
+
+
+
+</RelativeLayout>

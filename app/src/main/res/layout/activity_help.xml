@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewCopyRight"
+        android:layout_width="127dp"
+        android:layout_height="128dp"
+        android:layout_above="@+id/textViewDeveloper"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/copyright" />
+
+    <TextView
+        android:id="@+id/textViewDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPER CONTACT\n\nThis App is developed by \n Jannatul Ferdous\n aroni1815@cseku.ac.bd \n &amp; \nAldrin Saurov Sarker
+\n aldrin1804@cseku.ac.bd"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+     />
+</RelativeLayout>

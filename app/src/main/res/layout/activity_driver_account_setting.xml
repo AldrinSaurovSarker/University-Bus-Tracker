@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverAccountSettingActivity">
+
+    <EditText
+        android:id="@+id/editTextSettingDriverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/editTextSettingDriverNo"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextSettingDriverNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSettingBusName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Contact No"
+        android:minHeight="48dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextSettingBusName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextSettingBusNo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Bus Name"
+        android:minHeight="48dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextSettingBusNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Bus No"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editTextSettingBusDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSettingBusNo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Bus Route"
+        android:minHeight="48dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonDriverSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Account"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextSettingBusDetails"/>
+</RelativeLayout>
